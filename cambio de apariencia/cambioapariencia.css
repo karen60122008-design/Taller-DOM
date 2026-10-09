@@ -1,0 +1,28 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+}
+
+
+.fondo-original {
+  background-color: transparent;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.fondo-cambiado {
+  background-color: lightblue;
+  padding: 20px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+}
+
+
+button {
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 10px;
+}

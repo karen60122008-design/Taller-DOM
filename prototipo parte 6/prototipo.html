@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nueva EPS - Agendamiento de Citas</title>
+    <link rel="stylesheet" href="prototipo.css" />
+  </head>
+  <body>
+    <div class="contenedor-eps">
+      <h2>Nueva EPS - Portal de Agendamiento</h2>
+
+      <form id="formCitas" onsubmit="agendarCita(event)">
+        <div>
+          <label for="paciente">Nombre Completo del Afiliado:</label>
+          <input type="text" id="paciente" placeholder="Ingrese nombre y apellido" />
+          <span id="errorPaciente" class="error"></span>
+        </div>
+
+        <div>
+          <label for="documento">Número de Documento:</label>
+          <input type="text" id="documento" placeholder="Ingrese número de cédula o TI" />
+          <span id="errorDocumento" class="error"></span>
+        </div>
+
+        <div>
+          <label for="especialidad">Especialidad Médica:</label>
+          <select id="especialidad">
+            <option value="">-- Seleccione una especialidad --</option>
+            <option value="Medicina General">Medicina General</option>
+            <option value="Odontología">Odontología</option>
+            <option value="Pediatría">Pediatría</option>
+          </select>
+          <span id="errorEspecialidad" class="error"></span>
+        </div>
+
+        <button type="submit" id="btnAgendar">Solicitar Cita</button>
+      </form>
+
+      <p id="mensajeReserva" class="confirmacion"></p>
+    </div>
+
+    <script src="prototipo.js"></script>
+  </body>
+</html>
